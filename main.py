@@ -1,8 +1,6 @@
 import json
 from hashlib import sha256
 
-usuario = input('Usuario:')
-senha = input('Senha:')
 
 def cadastro(usuario, senha):
     senha_hash = cripitografarSenha(senha)
@@ -18,10 +16,23 @@ def cadastro(usuario, senha):
         json.dump(usuariosJson, arquivo, indent=4)
 
 
+def login(usuario, senha):
+    return  
+
 def cripitografarSenha(senha):
     senha_bytes = senha.encode('utf-8')
     senha_hash = sha256(senha_bytes)
     senha_hex = senha_hash.hexdigest()
     return senha_hex
 
-cadastro(usuario, senha)
+def interface():
+    print('1. Cadastro')
+    print('2. Login')
+    opcao = int(input('Seleciona a opção desejada: \n'))
+    if(opcao == 1):
+        cadastro(input('Usuario:'), input('Senha:'))
+    elif(opcao == 2):
+        login(input('Usuario:'), input('Senha:'))
+
+ 
+interface()

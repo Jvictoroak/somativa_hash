@@ -3,6 +3,10 @@ from hashlib import sha256
 
 
 def cadastro(usuario, senha):
+    if(len(usuario) != 4 or len(senha) != 4):
+        print('o usuario e a senha devem ter 4 caracters')
+        cadastro(input('Usuario:'), input('Senha:'))
+        return
     senha_hash = cripitografarSenha(senha)
     data = {
         'usuario': usuario,
@@ -17,7 +21,6 @@ def cadastro(usuario, senha):
     print('Cadastro realizado com sucesso')
     login(usuario, senha)
 
-
 def login(usuario, senha):
     senha_hash = cripitografarSenha(senha)
     with open('usuarios.json', 'r') as arquivo:
@@ -27,7 +30,6 @@ def login(usuario, senha):
             print('usuario autenticado')
             return
     print('usuario não autenticado')
-    
 
 def cripitografarSenha(senha):
     senha_bytes = senha.encode('utf-8')

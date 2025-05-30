@@ -1,5 +1,5 @@
-# import hashlib
-# print(hashlib.sha256("A".encode()).hexdigest()) # 559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd
+# Alexandre Andrioli Tucci
+# João Victor Saboya Ribeiro de Carvalho
 import json
 import hashlib
 import itertools

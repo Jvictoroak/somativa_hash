@@ -1,3 +1,5 @@
+# Alexandre Andrioli Tucci
+# João Victor Saboya Ribeiro de Carvalho
 import json
 from hashlib import sha256
 

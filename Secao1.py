@@ -20,7 +20,6 @@ def cadastro(usuario, senha):
     with open('usuariosSecao1.json', 'w') as arquivo:
         json.dump(usuariosJson, arquivo, indent=4)
     print('Cadastro realizado com sucesso')
-    # login(usuario, senha)
 
 def login(usuario, senha):
     senha_hash = cripitografarSenha(senha)

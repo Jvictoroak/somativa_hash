@@ -1,14 +1,18 @@
 [
     {
         "usuario": "joao",
-        "senha": "ed2befb11499489e2570cb053f774b8ed93e89eddab3f78867a2a5f32c58845e"
+        "senha": "d1c4e0fb6335e0e6787e74bf825359c2dfa6361f52e01445fb63f74016124264"
     },
     {
         "usuario": "alex",
-        "senha": "4135aa9dc1b842a653dea846903ddb95bfb8c5a10c504a7fa16e10bc31d1fdf0"
+        "senha": "e0ea3605f6c0cb5f0fcbbe54c65bdf2c8190667cd81d5b0164607296acbc30d1"
     },
     {
-        "usuario": "cido",
-        "senha": "292814a0968116a9cf35361430c2e67a9fc3bc09c53fac3f49b0181e4f4229a2"
+        "usuario": "mike",
+        "senha": "19252a7a3ab00e6c2dac91c45e4d0cb1fa71337dc66503f503229419756e651d"
+    },
+    {
+        "usuario": "hash",
+        "senha": "59d937723564937cd1441370c7c7cd9f669f93253dcfab8c50affad3b18d645e"
     }
 ]

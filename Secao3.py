@@ -34,7 +34,7 @@ def cadastro(usuario, senha):
         json.dump(usuarios, arquivo, indent=4)
 
     print('Cadastro realizado com sucesso.')
-    login(usuario, senha)
+    # login(usuario, senha)
 
 def login(usuario, senha):
     with open('usuariosSecao3.json', 'r') as arquivo:

@@ -6,7 +6,9 @@ import itertools
 import string
 import time
 
-with open('usuariosSecao1.json', 'r') as arquivo:
+# Por a estrutura dos arquivos JSON serem diferentes (um possui salt e outro não), para testar a Força Bruta no usuariosSecao3 comente a linha abaixo e descomente a seguinte.
+with open('usuariosSecao3.json', 'r') as arquivo:
+# with open('usuariosSecao3.json', 'r') as arquivo:
     usuariosJson = json.load(arquivo)
 
 def percorrerJson(json, length):
